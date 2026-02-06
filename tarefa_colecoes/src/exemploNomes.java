@@ -9,10 +9,10 @@ public class exemploNomes {
 
         String resposta = sc.nextLine();
 
-        // split quebra a String em um array de nomes
+
         String[] vet = resposta.split(",");
 
-        // remove espaços extras antes/depois dos nomes
+
         for (int i = 0; i < vet.length; i++) {
             vet[i] = vet[i].trim();
         }
@@ -22,7 +22,7 @@ public class exemploNomes {
             System.out.println(nome);
         }
 
-        // Bubble Sort
+
         for (int i = 0; i < vet.length; i++) {
             for (int j = 0; j < vet.length - 1; j++) {
                 if (vet[j].compareToIgnoreCase(vet[j + 1]) > 0) {
